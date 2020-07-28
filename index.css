@@ -1,0 +1,139 @@
+/*Default
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/*Add Information
+*/
+.addInformation {
+    position: relative;
+    width: 1300px;
+    height: 100px;
+    border: solid 5px white;
+    left: 50%;
+    margin-left: -650px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addInformation button {
+    position: absolute;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    padding: 21.2px 635.4px;
+    transition: background-color 0.3s;
+}
+
+.addInformation button:hover {
+    background-color: gray;
+}
+
+/*Information Wrap
+*/
+.information {
+    position: relative;
+    width: 700px;
+    height: 230px;
+    left: 50%;
+    margin-left: -350px;
+    background-color: white;
+}
+
+/*Get Name
+*/
+.information .getName {
+    position: absolute;
+    margin: 15px 0 0 10px;
+}
+
+.getName .nameForm input {
+    font-size: 18px;
+    width: 550px;
+    height: 21px;
+}
+
+/*Movie Rate
+*/
+.information .movieRate {
+    position: absolute;
+    margin: 53px 0 0 20px;
+}
+
+.movieRate span {
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+/*Line Review
+*/
+.information .lineReview {
+    position: absolute;
+    margin: 96px 0 0 10px;
+}
+
+.lineReview .reviewForm input {
+    font-size: 18px;
+    width: 550px;
+    height: 21px;
+}
+
+/*Link
+*/
+.link {
+    position: absolute;
+    margin: 138px 0 0 10px;
+}
+
+.link .linkForm input {
+    font-size: 18px;
+    width: 550px;
+    height: 21px;
+}
+
+/*Submit Button
+*/
+.submitBtn {
+    position: absolute;
+    margin: 190px 0 0 10px;
+}
+
+/*Title
+*/
+.title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Movie List
+*/
+.movieList {
+    position: relative;
+    width: 1300px;
+    left: 50%;
+    margin-left: -650px;
+}
+
+/*Nothing in List
+*/
+.movieList p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*JS Setting
+.information {
+    display: none;
+}
+*/
