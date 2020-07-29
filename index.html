@@ -7,14 +7,14 @@
 </head>
 <body>
     <!--Add Information-->
-    <div class="addInformation">
-        <button type="button" class="addInformationBtn">+</button>
+    <div class="js-addInformation addInformation">
+        <button type="button" class="js-addBtn addBtn">+</button>
     </div>
     <!--Information Wrap-->
-    <div class="jsINformation information">
+    <div class="js-information information">
         <!--Get Name-->
         <div class="getName">
-            <form class="jsNameForm nameForm">
+            <form class="js-nameForm nameForm">
                 <input type="text" placeholder="Movie Name" />
             </form>
         </div>
@@ -28,26 +28,34 @@
         </div>
         <!--Line Review-->
         <div class="lineReview">
-            <form class="jsReviewForm reviewForm">
+            <form class="js-reviewForm reviewForm">
                 <input type="text" placeholder="Line Review" />
             </form>
         </div>
         <!--Link-->
-        <div class="Link">
-            <form class="jsLinkForm linkForm">
+        <div class="link">
+            <form class="js-linkForm linkForm">
                 <input type="text" placeholder="Link" />
             </form>
+        </div>
+        <!--Save Button-->
+        <div class="save">
+            <button type="button" class="js-saveBtn saveBtn">Save</button>
+        </div>
+        <!--Cancel Button-->
+        <div class="cancel">
+            <button type="button" class="js-cancelBtn cancelBtn">Cancel</button>
         </div>
     </div>
     <!--Title-->
     <p class="title">----------My Movies----------</p>
     <!--Movie List-->
     <div class="movieList">
-        <ul class="jsMovieList"></ul>
+        <ul class="js-movieList"></ul>
         <!--Nothing in List-->
-        <p class="jsNothingInList nothingInList">There is nothing in the list.</p>
+        <p class="js-nothingInList nothingInList">There is nothing in the list.</p>
     </div>
 
-    <script src="index.js"></script>
+    <script src="add.js"></script>
 </body>
 </html>
