@@ -13,27 +13,27 @@ body {
 */
 .addInformation {
     position: relative;
-    width: 1300px;
+    width: 1200px;
     height: 100px;
     border: solid 5px white;
     left: 50%;
-    margin-left: -650px;
-    margin-top: 20px;
+    margin-left: -600px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.addInformation button {
+.addInformation .addBtn {
     position: absolute;
     cursor: pointer;
     font-size: 50px;
     color: white;
     background-color: transparent;
     border: 0;
-    padding: 21.2px 635.4px;
+    padding: 21.2px 585.4px;
     transition: background-color 0.3s;
 }
 
-.addInformation button:hover {
+.addInformation .addBtn:hover {
     background-color: gray;
 }
 
@@ -45,32 +45,61 @@ body {
     height: 230px;
     left: 50%;
     margin-left: -350px;
-    background-color: white;
+    margin-top: 30px;
+    background-color: #f5c6ee;
+    border-radius: 7px;
+}
+
+.information input {
+    background-color: transparent;
+    padding: 3px 2px;
+    border: 0;
+    border-bottom: solid 3px purple;
 }
 
 /*Get Name
 */
 .information .getName {
     position: absolute;
-    margin: 15px 0 0 10px;
+    margin: 15px 0 0 15px;
 }
 
 .getName .nameForm input {
     font-size: 18px;
-    width: 550px;
+    width: 660px;
     height: 21px;
 }
 
 /*Movie Rate
 */
-.information .movieRate {
+.information .movieRate,
+.information .rateFinal {
     position: absolute;
-    margin: 53px 0 0 20px;
+    margin: 53px 0 0 260px;
+    /* margin: 53px 0 0 25px; */
+}
+
+.movieRate span,
+.rateFinal span {
+    font-size: 24px;
+    margin: 0 3px;
 }
 
 .movieRate span {
-    font-size: 20px;
-    margin: 0 3px;
+    cursor: pointer;
+}
+
+.information .rateResetBtn {
+    position: absolute;
+    margin: 54px 0 0 490px;
+}
+
+.rateResetBtn .resetBtn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 23px;
     cursor: pointer;
 }
 
@@ -78,12 +107,12 @@ body {
 */
 .information .lineReview {
     position: absolute;
-    margin: 96px 0 0 10px;
+    margin: 96px 0 0 15px;
 }
 
 .lineReview .reviewForm input {
     font-size: 18px;
-    width: 550px;
+    width: 660px;
     height: 21px;
 }
 
@@ -91,20 +120,35 @@ body {
 */
 .link {
     position: absolute;
-    margin: 138px 0 0 10px;
+    margin: 138px 0 0 15px;
 }
 
 .link .linkForm input {
     font-size: 18px;
-    width: 550px;
+    width: 660px;
     height: 21px;
 }
 
-/*Submit Button
+/*Save Button
 */
-.submitBtn {
+.save {
     position: absolute;
-    margin: 190px 0 0 10px;
+    margin: 190px 0 0 15px;
+}
+
+.save .saveBtn {
+    cursor: pointer;
+}
+
+/*Cancel Button
+*/
+.cancel {
+    position: absolute;
+    margin: 190px 0 0 71px;
+}
+
+.cancel .cancelBtn {
+    cursor: pointer;
 }
 
 /*Title
@@ -133,7 +177,15 @@ body {
 }
 
 /*JS Setting
-.information {
+*/
+.addInformation,
+.information,
+.movieRate,
+.rateFinal,
+.rateResetBtn {
     display: none;
 }
-*/
+
+.showing {
+    display: block;
+}
