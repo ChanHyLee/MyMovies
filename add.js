@@ -17,7 +17,7 @@ const cancelBtn = document.querySelector(".js-cancelBtn");
 
 const SHOWING_CLASS = "showing";
 
-function handleCancelBtn(event) {
+function resetInformation() {
     nameInput.value = "";
     reviewInput.value = "";
     rateFinal1.innerText = "😐";
@@ -33,7 +33,9 @@ function handleCancelBtn(event) {
     rateResetBtn.classList.remove(SHOWING_CLASS);
 }
 
-function handleSaveBtn(event) {}
+function handleCancelBtn(event) {
+    resetInformation();
+}
 
 function handleAddBtnClick(event) {
     addInformation.classList.remove(SHOWING_CLASS);
@@ -43,7 +45,6 @@ function handleAddBtnClick(event) {
 function init() {
     addInformation.classList.add(SHOWING_CLASS);
     addBtn.addEventListener("click", handleAddBtnClick);
-    saveBtn.addEventListener("click", handleSaveBtn);
     cancelBtn.addEventListener("click", handleCancelBtn);
 }
 init();
