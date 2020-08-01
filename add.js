@@ -13,6 +13,7 @@ const rate5 = document.querySelector(".js-rate5");
 const reviewInput = document.querySelector(".js-reviewInput");
 const linkInput = document.querySelector(".js-linkInput");
 const saveBtn = document.querySelector(".js-saveBtn");
+const editBtn = document.querySelector(".js-editSaveBtn");
 const cancelBtn = document.querySelector(".js-cancelBtn");
 
 const SHOWING_CLASS = "showing";
@@ -31,6 +32,11 @@ function resetInformation() {
     movieRate.classList.add(SHOWING_CLASS);
     rateFinal.classList.remove(SHOWING_CLASS);
     rateResetBtn.classList.remove(SHOWING_CLASS);
+    saveBtn.classList.add(SHOWING_CLASS);
+    editBtn.classList.remove(SHOWING_CLASS);
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.add(SHOWING_CLASS);
+    }
 }
 
 function handleCancelBtn(event) {
@@ -38,6 +44,8 @@ function handleCancelBtn(event) {
 }
 
 function handleAddBtnClick(event) {
+    saveBtn.classList.add(SHOWING_CLASS);
+    editBtn.classList.remove(SHOWING_CLASS);
     addInformation.classList.remove(SHOWING_CLASS);
     information.classList.add(SHOWING_CLASS);
 }
