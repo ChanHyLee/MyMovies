@@ -145,6 +145,21 @@ body {
     font-size: 18px;
 }
 
+.editSave {
+    position: absolute;
+    margin: 190px 0 0 15px;
+}
+
+.editSave .editSaveBtn {
+    cursor: pointer;
+    padding: 1px 3px;
+    color: #4b0082;
+    border-color: #4b0082;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 18px;
+}
+
 /*Cancel Button
 */
 .cancel {
@@ -223,18 +238,22 @@ body {
 
 .movieList li p {
     position: absolute;
-    margin: 100px 0 0 28px;
+    margin: 100px 0 0 30px;
     cursor: pointer;
 
 }
 
 .movieList li button {
     float: right;
-    margin: 10px 10px 0 0;
-    padding: o;
+    margin: 10px 7px 0 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+.movieList li .editBtn {
+    font-size: 17px;
+    margin: 7px 4px 0 0;
 }
 
 /*Nothing in List
@@ -252,7 +271,10 @@ body {
 .movieRate,
 .rateFinal,
 .rateResetBtn,
-.nothingInList {
+.nothingInList,
+.saveBtn,
+.editSaveBtn,
+ul li button {
     display: none;
 }
 
