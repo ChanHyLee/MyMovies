@@ -9,7 +9,7 @@ const SAVES_LS = "saves";
 let saves = [];
 let rememberId;
 
-function handleEditClick(event) {
+function handleEditSave(event) {
     const name = nameInput.value;
     const rate = `${
         rateFinal1.innerText
@@ -40,6 +40,17 @@ function handleEditClick(event) {
         } else {
             li.getElementsByTagName("p")[0].innerText = "No link";
         }
+        const loadSaves = JSON.parse(localStorage.getItem(SAVES_LS));
+        for (let i = 0; i < loadSaves.length; i++) {
+            if (Number(loadSaves[i].id) === rememberId) {
+                loadSaves[i].name = name;
+                loadSaves[i].rate = rate;
+                loadSaves[i].review = review;
+                loadSaves[i].link = link;
+            }
+        }
+        saves = loadSaves;
+        saveSaves();
         resetInformation();
     }
     for (let i = 0; i < buttons.length; i++) {
@@ -49,7 +60,7 @@ function handleEditClick(event) {
 
 function handleEditBtn(event) {
     const li = event.target.parentNode;
-    rememberId = li.id;
+    rememberId = Number(li.id);
     const name = li.getElementsByTagName("h2")[0].innerText;
     const rate = li.getElementsByTagName("span")[0].innerText;
     const rateArray = rate.split(" ");
@@ -73,7 +84,7 @@ function handleEditBtn(event) {
     }
     saveBtn.classList.remove(SHOWING_CLASS);
     editBtn.classList.add(SHOWING_CLASS);
-    editBtn.addEventListener("click", handleEditClick);
+    editBtn.addEventListener("click", handleEditSave);
     movieRate.classList.remove(SHOWING_CLASS);
     rateFinal.classList.add(SHOWING_CLASS);
     rateResetBtn.classList.add(SHOWING_CLASS);
@@ -104,7 +115,7 @@ function deleteSaves(event) {
         }
     );
     saves = cleanSaves;
-    saveSaves(saves);
+    saveSaves();
     isNothingInList();
 }
 
