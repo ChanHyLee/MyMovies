@@ -6,62 +6,65 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!--Add Information-->
-    <div class="js-addInformation addInformation">
-        <button type="button" class="js-addBtn addBtn">+</button>
-    </div>
-    <!--Information Wrap-->
-    <div class="js-information information">
-        <!--Get Name-->
-        <div class="getName">
-            <input type="text" placeholder="Movie Name" class="js-nameInput nameInput" />
+    <!--Main Wrap-->
+    <div class="mainWrap">
+        <!--Add Information-->
+        <div class="js-addInformation addInformation">
+            <button type="button" class="js-addBtn addBtn">+</button>
         </div>
-        <!--Movie Rate-->
-        <div class="js-movieRate movieRate">
-            <span class="js-rate1 rate1">😐</span>
-            <span class="js-rate2 rate2">😐</span>
-            <span class="js-rate3 rate3">😐</span>
-            <span class="js-rate4 rate4">😐</span>
-            <span class="js-rate5 rate5">😐</span>
+        <!--Information Wrap-->
+        <div class="js-information information">
+            <!--Get Name-->
+            <div class="getName">
+                <input type="text" placeholder="Movie Name" class="js-nameInput nameInput" />
+            </div>
+            <!--Movie Rate-->
+            <div class="js-movieRate movieRate">
+                <span class="js-rate1 rate1">😐</span>
+                <span class="js-rate2 rate2">😐</span>
+                <span class="js-rate3 rate3">😐</span>
+                <span class="js-rate4 rate4">😐</span>
+                <span class="js-rate5 rate5">😐</span>
+            </div>
+            <div class="js-rateFinal rateFinal">
+                <span class="js-rateFinal1 rateFinal1">😐</span>
+                <span class="js-rateFinal2 rateFinal2">😐</span>
+                <span class="js-rateFinal3 rateFinal3">😐</span>
+                <span class="js-rateFinal4 rateFinal4">😐</span>
+                <span class="js-rateFinal5 rateFinal5">😐</span>
+            </div>
+            <div class="js-rateResetBtn rateResetBtn">
+                <button type="button" class="js-resetBtn resetBtn">✏</button>
+            </div>
+            <!--Line Review-->
+            <div class="lineReview">
+                <input type="text" placeholder="Line Review" class="js-reviewInput reviewInput" />
+            </div>
+            <!--Link-->
+            <div class="link">
+                <input type="text" placeholder="Link(Optional)" class="js-linkInput linkInput" />
+            </div>
+            <!--Save Button-->
+            <div class="save">
+                <button type="button" class="js-saveBtn saveBtn">Save</button>
+            </div>
+            <!--Edit Save Button-->
+            <div class="editSave">
+                <button type="button" class="js-editSaveBtn editSaveBtn">Save</button>
+            </div>
+            <!--Cancel Button-->
+            <div class="cancel">
+                <button type="button" class="js-cancelBtn cancelBtn">Cancel</button>
+            </div>
         </div>
-        <div class="js-rateFinal rateFinal">
-            <span class="js-rateFinal1 rateFinal1">😐</span>
-            <span class="js-rateFinal2 rateFinal2">😐</span>
-            <span class="js-rateFinal3 rateFinal3">😐</span>
-            <span class="js-rateFinal4 rateFinal4">😐</span>
-            <span class="js-rateFinal5 rateFinal5">😐</span>
+        <!--Title-->
+        <p class="title">----------My Movies----------</p>
+        <!--Movie List-->
+        <div class="movieList">
+            <ul class="js-movieList"></ul>
+            <!--Nothing in List-->
+            <p class="js-nothingInList nothingInList">There is nothing in the list.</p>
         </div>
-        <div class="js-rateResetBtn rateResetBtn">
-            <button type="button" class="js-resetBtn resetBtn">✏</button>
-        </div>
-        <!--Line Review-->
-        <div class="lineReview">
-            <input type="text" placeholder="Line Review" class="js-reviewInput reviewInput" />
-        </div>
-        <!--Link-->
-        <div class="link">
-            <input type="text" placeholder="Link(Optional)" class="js-linkInput linkInput" />
-        </div>
-        <!--Save Button-->
-        <div class="save">
-            <button type="button" class="js-saveBtn saveBtn">Save</button>
-        </div>
-        <!--Edit Save Button-->
-        <div class="editSave">
-            <button type="button" class="js-editSaveBtn editSaveBtn">Save</button>
-        </div>
-        <!--Cancel Button-->
-        <div class="cancel">
-            <button type="button" class="js-cancelBtn cancelBtn">Cancel</button>
-        </div>
-    </div>
-    <!--Title-->
-    <p class="title">----------My Movies----------</p>
-    <!--Movie List-->
-    <div class="movieList">
-        <ul class="js-movieList"></ul>
-        <!--Nothing in List-->
-        <p class="js-nothingInList nothingInList">There is nothing in the list.</p>
     </div>
 
     <script src="add.js"></script>
