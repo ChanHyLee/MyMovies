@@ -1,25 +1,53 @@
 /*Default
 */
-html, body {
+html, body, ul {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: black;
+    height: 100%;
+    background-image: url(bgImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -50px;
+    z-index: -1;
+}
+
+input {
+    letter-spacing: 1px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*Main Wrap
+*/
+.mainWrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Add Information
 */
 .addInformation {
     position: relative;
-    width: 1200px;
+    width: 1000px;
     height: 100px;
     border: solid 5px white;
     left: 50%;
-    margin-left: -600px;
+    margin-left: -500px;
     margin-top: 35px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
 }
 
 .addInformation .addBtn {
@@ -29,12 +57,12 @@ body {
     color: white;
     background-color: transparent;
     border: 0;
-    padding: 21.2px 585.4px;
+    padding: 21.2px 485.4px;
     transition: background-color 0.3s;
 }
 
 .addInformation .addBtn:hover {
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Information Wrap
@@ -46,7 +74,8 @@ body {
     left: 50%;
     margin-left: -350px;
     margin-top: 30px;
-    background-color: #f5c6ee;
+    background-color: rgba(245, 198, 238, 0.85);
+    box-shadow: 0 0 7px black;
     border-radius: 7px;
 }
 
@@ -76,6 +105,7 @@ body {
 .information .rateFinal {
     position: absolute;
     margin: 53px 0 0 260px;
+    text-shadow: 0 0 1.5px black;
 }
 
 .movieRate span,
@@ -142,6 +172,7 @@ body {
     border-color: #4b0082;
     border-radius: 3px;
     background-color: yellow;
+    box-shadow: 0 0 1.3px #4b0082;
     font-size: 18px;
 }
 
@@ -157,6 +188,7 @@ body {
     border-color: #4b0082;
     border-radius: 3px;
     background-color: yellow;
+    box-shadow: 0 0 1.3px #4b0082;
     font-size: 18px;
 }
 
@@ -174,27 +206,53 @@ body {
     border-color: #4b0082;
     border-radius: 3px;
     background-color: yellow;
+    box-shadow: 0 0 1.3px #4b0082;
     font-size: 18px;
 }
 
 /*Title
 */
 .title {
+    position: relative;
     color: white;
     font-size: 20px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px;
+    text-shadow: 0 0 10px black;
 }
 
 /*Movie List
 */
 .movieList {
-    position: relative;
-    width: 1400px;
+    position: absolute;
+    width: 1250px;
+    height: 60%;
+    overflow-x: hidden;
+    overflow-y: auto;
     left: 50%;
-    margin-left: -700px;
-    padding-bottom: 30px;
+    margin-left: -625px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ececec;
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: darkgray;
 }
 
 .movieList ul {
@@ -208,13 +266,15 @@ body {
 
 .movieList ul li {
     position: relative;
-    width: 1200px;
+    width: 1000px;
     height: 140px;
     left: 50%;
-    margin-left: -600px;
+    margin-left: -500px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    background-color: paleturquoise;
+    background-color: rgba(175, 238, 238, 0.93);
     border-radius: 7px;
+    box-shadow: 0 0 7px black;
 }
 
 .movieList li h2 {
@@ -262,6 +322,7 @@ body {
     color: white;
     font-size: 20px;
     text-align: center;
+    text-shadow: 0 0 10px black;
 }
 
 /*JS Setting
